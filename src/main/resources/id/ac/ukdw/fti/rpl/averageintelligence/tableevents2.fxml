@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.fti.rpl.averageintelligence.FXMLController">
+   <children>
+      <TableView fx:id="tableVerses" layoutX="11.0" layoutY="149.0" prefHeight="247.0" prefWidth="582.0">
+        <columns>
+            <TableColumn fx:id="verseAyat" prefWidth="157.0" text="Ayat" />
+          <TableColumn fx:id="eventsField" prefWidth="184.0" text="Events" />
+          <TableColumn fx:id="dateField" prefWidth="139.0" text="Start Date" />
+            <TableColumn fx:id="durationField" prefWidth="101.0" text="Duration" />
+        </columns>
+      </TableView>
+      <Text layoutX="181.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabel Alkitab Events - Period" wrappingWidth="275.46014404296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchField" layoutX="79.0" layoutY="99.0" prefHeight="26.0" prefWidth="223.0" promptText="Mis : Adam / 2001" />
+      <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pencarian :" />
+   </children>
+</AnchorPane>
