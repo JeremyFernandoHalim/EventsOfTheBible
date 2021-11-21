@@ -37,9 +37,8 @@ public class Database {
                 Verse verse = new Verse();
                 verse.setAyatEvents(result.getString("verses"));
                 verse.setTitleEvents(result.getString("title"));
-                verse.setDateEvents(result.getString("startDate"));
+                verse.setDateEvents(result.getInt("startDate"));
                 verse.setDurationEvents(result.getString("duration"));
-    
                 verses.add(verse);
             }
         } catch(Exception e){

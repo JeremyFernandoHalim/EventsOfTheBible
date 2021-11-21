@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="938.0" prefWidth="1195.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.fti.rpl.averageintelligence.FXMLController">
+   <children>
+      <Text layoutX="434.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualisasi Data Alkitab Events - Periods" wrappingWidth="326.46014404296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <AreaChart fx:id="areaChart" layoutX="56.0" layoutY="182.0" prefHeight="638.0" prefWidth="1101.0" title="Data Alkitab Events - Periods">
+        <xAxis>
+         <CategoryAxis fx:id="catAxis" label="Events" side="TOP" /> 
+        </xAxis>
+        <yAxis>
+         <NumberAxis fx:id="numAxis" label="Periods" lowerBound="-5000.0" />v     
+        </yAxis>
+      </AreaChart>
+      <Button fx:id="homeId" layoutX="1093.0" layoutY="21.0" mnemonicParsing="false" onAction="#klik" prefHeight="32.0" prefWidth="59.0" text="Home" />
+   </children>
+</AnchorPane>

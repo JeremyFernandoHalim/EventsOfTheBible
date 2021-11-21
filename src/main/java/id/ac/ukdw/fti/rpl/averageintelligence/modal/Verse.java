@@ -1,10 +1,10 @@
 package id.ac.ukdw.fti.rpl.averageintelligence.modal;
 
 public class Verse {
-    private String ayatEvents;
     private String titleEvents;
-    private String dateEvents;
+    private Integer dateEvents;
     private String durationEvents;
+    private String ayatEvents;
 
     public void setAyatEvents(String ayatEvents){
         this.ayatEvents = ayatEvents;
@@ -14,7 +14,7 @@ public class Verse {
         this.titleEvents = titleEvents;
     }
 
-    public void setDateEvents(String dateEvents){
+    public void setDateEvents(int dateEvents){
         this.dateEvents = dateEvents;
     }
 
@@ -38,14 +38,13 @@ public class Verse {
         }  
     }
 
-    public String getDateEvents(){
-        if(this.dateEvents==null){
-            return "null";
+    public Integer getDateEvents(){
+        if(Integer.toString(this.dateEvents)==null) {
+            return 0;
         }else{
             return this.dateEvents;
-        }   
+        }     
     }
-
     public String getDurationEvents(){
         if(this.durationEvents==null){
             return "null";
@@ -53,5 +52,4 @@ public class Verse {
             return this.durationEvents;
         }   
     }
-  
 }
