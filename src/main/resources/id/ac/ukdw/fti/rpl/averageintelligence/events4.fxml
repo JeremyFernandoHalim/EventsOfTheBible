@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.fti.rpl.averageintelligence.FXMLTabelController">
    <children>
-      <TableView fx:id="tableVerses" layoutX="11.0" layoutY="149.0" prefHeight="247.0" prefWidth="582.0">
+      <TableView fx:id="tableVerses" layoutX="11.0" layoutY="149.0" prefHeight="247.0" prefWidth="582.0" style="-fx-border-color: #6aa84f;">
         <columns>
             <TableColumn fx:id="verseAyat" prefWidth="157.0" text="Ayat" />
           <TableColumn fx:id="eventsField" prefWidth="184.0" text="Events" />
@@ -18,13 +18,13 @@
             <TableColumn fx:id="durationField" prefWidth="101.0" text="Duration" />
         </columns>
       </TableView>
-      <Text layoutX="181.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabel Alkitab Events - Periods" wrappingWidth="275.46014404296875">
+      <Text fill="#4dff00" layoutX="181.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabel Alkitab Events - Periods" wrappingWidth="275.46014404296875">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
       <TextField fx:id="searchField" layoutX="79.0" layoutY="99.0" prefHeight="26.0" prefWidth="223.0" promptText="Mis : Adam / 2001" />
-      <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pencarian :" />
-      <Button fx:id="visualisasiId" layoutX="501.0" layoutY="14.0" mnemonicParsing="false" onAction="#next" text="Visualisasi" />
+      <Text fill="#4dff00" layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pencarian :" />
+      <Button fx:id="visualisasiId" layoutX="501.0" layoutY="14.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: #6aa84f;" text="Visualisasi" textFill="WHITE" />
    </children>
 </AnchorPane>
